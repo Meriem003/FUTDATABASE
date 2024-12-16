@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    /* Reset des marges et polices */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,13 +21,11 @@
     line-height: 1.6;
   }
   
-  /* Conteneur principal */
   .dashboard {
     display: flex;
     min-height: 100vh;
   }
   
-  /* Sidebar */
   .sidebar {
     width: 250px;
     background-color: #2c3e50;
@@ -61,7 +59,6 @@
     background-color: #2980b9;
   }
   
-  /* Contenu principal */
   .main-content {
     flex: 1;
     padding: 20px;
@@ -71,7 +68,6 @@
     gap: 20px;
   }
   
-  /* Titre principal */
   .header h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -79,7 +75,6 @@
     color: #2c3e50;
   }
   
-  /* Formulaire */
   form {
     background: #ffffff;
     border-radius: 8px;
@@ -144,7 +139,7 @@
     background-color: #219150;
   }
   
-  /* Tableau */
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -181,7 +176,6 @@
     object-fit: cover;
   }
   
-  /* Boutons cachés */
   .hidden {
     display: none;
   }
@@ -198,77 +192,123 @@
       <header class="header">
         <h1>Liste des Joueurs</h1>
       </header>
-
-      <!-- Nouveau formulaire pour ajouter un joueur -->
       <form id="player-form" class="hidden">
         <h3>Ajouter un Nouveau Joueur</h3>
         <div class="form-group">
           <label for="name">Nom :</label>
           <select id="name" name="name">
-            <option value="lionel messi">Lionel Messi</option>
-            <option value="cristiano ronaldo">Cristiano Ronaldo</option>
-            <option value="kylian mbappe">Kylian Mbappé</option>
-            <option value="erling haaland">Erling Haaland</option>
-            <option value="neymar jr">Neymar Jr</option>
-            <option value="achraf hakimi">Achraf Hakimi</option>
-            <option value="kevin de bruyne">Kevin De Bruyne</option>
-            <option value="robert lewandowski">Robert Lewandowski</option>
-            <option value="mohamed salah">Mohamed Salah</option>
-            <option value="karim benzema">Karim Benzema</option>
-            <option value="luka modric">Luka Modric</option>
+            <option value="1">Lionel Messi</option>
+            <option value="2">Cristiano Ronaldo</option>
+            <option value="3">Kylian Mbappé</option>
+            <option value="4">Erling Haaland</option>
+            <option value="5">Neymar Jr</option>
+            <option value="6">Achraf Hakimi</option>
+            <option value="7">Kevin De Bruyne</option>
+            <option value="8">Robert Lewandowski</option>
+            <option value="9">Mohamed Salah</option>
+            <option value="10">Karim Benzema</option>
           </select>
         </div>
         <div class="form-group">
           <label for="nationality">Nationalité :</label>
           <select id="nationality" name="nationality">
-            <option value="argentine">Argentine</option>
-            <option value="portugal">Portugal</option>
-            <option value="france">France</option>
-            <option value="brazil">Brésil</option>
-            <option value="norway">Norvège</option>
-            <option value="morocco">Maroc</option>
-            <option value="belgium">Belgique</option>
-            <option value="poland">Pologne</option>
-            <option value="egypt">Égypte</option>
-            <option value="croatia">Croatie</option>
+            <option value="1">Argentine</option>
+            <option value="2">Portugal</option>
+            <option value="3">France</option>
+            <option value="4">Brésil</option>
+            <option value="5">Norvège</option>
+            <option value="6">Maroc</option>
+            <option value="7">Belgique</option>
+            <option value="8">Pologne</option>
+            <option value="9">Égypte</option>
+            <option value="10">Croatie</option>
           </select>
         </div>
         <div class="form-group">
           <label for="club">Club :</label>
           <select id="club" name="club">
-            <option value="psg">Paris Saint-Germain</option>
-            <option value="real-madrid">Real Madrid</option>
-            <option value="fc-barcelona">FC Barcelona</option>
-            <option value="manchester-city">Manchester City</option>
-            <option value="bayern-munich">Bayern Munich</option>
+            <option value="1">Paris Saint-Germain</option>
+            <option value="2">Real Madrid</option>
+            <option value="3">FC Barcelona</option>
+            <option value="4">Manchester City</option>
+            <option value="5">Bayern Munich</option>
+            <option value="6">Juventus</option>
+            <option value="7">Chelsea</option>
+            <option value="8">AC Milan</option>
+            <option value="9">Liverpool</option>
+            <option value="10">Arsenal</option>
           </select>
         </div>
         <div class="form-group">
           <label for="position">Position :</label>
           <select id="position" name="position">
-            <option value="GK">Gardien (GK)</option>
             <option value="LB">Arrière Gauche (LB)</option>
+            <option value="GK">Gardien (GK)</option>
             <option value="RB">Arrière Droit (RB)</option>
             <option value="CM">Milieu (CM)</option>
             <option value="LW">Ailier Gauche (LW)</option>
             <option value="ST">Attaquant (ST)</option>
           </select>
-        </div>
-        <div class="form-group">
-          <label for="rating">Note :</label>
-          <input type="number" id="rating" name="rating" min="1" max="100" placeholder="Entrez la note" required>
-        </div>
-        <div class="form-group">
           <label for="photo">Photo :</label>
           <select id="photo" name="photo">
             <option value="https://cdn.sofifa.net/players/231/747/25_120.png">Photo 1</option>
             <option value="https://cdn.sofifa.net/players/209/981/25_120.png">Photo 2</option>
+            <option value="https://cdn.sofifa.net/players/230/621/25_120.png">Photo 3</option>
+            <option value="https://cdn.sofifa.net/players/259/480/25_120.png">Photo 4</option>
           </select>
         </div>
-        <button type="submit">Ajouter</button>
+        <div class="form-group">
+          <label for="rating">Rating :</label>
+          <input type="number" id="rating" name="rating" placeholder="Entrez rating" min="1" max="100" >
+        </div>
+        <div class="stats-group">
+          <div class="form-group">
+              <label for="pace">Pace :</label>
+              <input type="number" id="pace" name="pace" placeholder="Entrez pace" min="1" max="100" >
+          </div>
+          <div class="form-group">
+              <label for="shooting">Shooting :</label>
+              <input type="number" id="shooting" name="shooting" placeholder="Entrez shooting" min="1" max="100" >
+          </div>
+          <div class="form-group">
+              <label for="passing">Passes :</label>
+              <input type="number" id="passing" name="passing" placeholder="Entrez passing" min="1" max="100" >
+          </div>
+          <div class="form-group">
+              <label for="dribbling">Dribbles :</label>
+              <input type="number" id="dribbling" name="dribbling" placeholder="Entrez dribbling" min="1" max="100" >
+          </div>
+          <div class="form-group">
+              <label for="defending">Défense :</label>
+              <input type="number" id="defending" name="defending" placeholder="Entrez defending" min="1" max="100" >
+          </div>
+          <div class="form-group">
+              <label for="defending">physical :</label>
+              <input type="number" id="physical" name="physical" placeholder="physical" min="1" max="100" >
+          </div>
+            <div class="Gk-joueur">
+            <div class="form-group">
+                <label for="diving">diving :</label>
+                <input type="number" id="diving" name="diving" placeholder="Entrez handling" min="1" max="100" >
+            </div>
+            <div class="form-group">
+                <label for="handling">handling :</label>
+                <input type="number" id="handling" name="handling" placeholder="Entrez handling" min="1" max="100" >
+            </div>
+            <div class="form-group">
+                <label for="kicking">kicking :</label>
+                <input type="number" id="kicking" name="kicking" placeholder="Entrez kicking" min="1" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="reflexes">reflexes :</label>
+                <input type="number" id="reflexes" name="reflexes" placeholder="Entrez reflexes" min="1" max="100" >
+            </div>
+            <div class="form-group">
+                <label for="speed">speed :</label>
+                <input type="number" id="speed" name="speed" placeholder="Entrez speed" min="1" max="100" >
+            </div>
+        <button>Ajouter le joueur</button>
       </form>
-
-      <!-- Tableau des joueurs -->
       <table id="players-table" class="hidden">
         <thead>
           <tr>
@@ -277,59 +317,51 @@
             <th>Position</th>
             <th>Nationalité</th>
             <th>Club</th>
-            <th>Note</th>
+            <th>Rating</th>
           </tr>
         </thead>
         <tbody>
-          <!-- Les joueurs seront ajoutés ici dynamiquement -->
+        
         </tbody>
       </table>
     </main>
   </div>
 
   <script>
-    // Boutons
+  const position = document.getElementById("position");
+  position.addEventListener("change", function (event) {
+  const selectedPosition = event.target.value;
+  const allJoueur = document.querySelectorAll(".stats-group .form-group");
+  const gkJoueur = document.querySelectorAll(".Gk-joueur .form-group");
+
+  if (selectedPosition === "GK") {
+    allJoueur.forEach((group) => {
+      group.style.display = "none";
+    });
+    gkJoueur.forEach((group) => {
+      group.style.display = "block";
+    });
+  } else {
+    allJoueur.forEach((group) => {
+      group.style.display = "block";
+    });
+    gkJoueur.forEach((group) => {
+      group.style.display = "none";
+    });
+  }
+});
     const loadPlayersBtn = document.getElementById("load-players-btn");
     const addPlayerBtn = document.getElementById("add-player-btn");
     const playerForm = document.getElementById("player-form");
     const playersTable = document.getElementById("players-table");
 
-    // Afficher la liste des joueurs
     loadPlayersBtn.addEventListener("click", function() {
       playerForm.classList.add("hidden");
       playersTable.classList.remove("hidden");
     });
-
-    // Afficher le formulaire pour ajouter un joueur
     addPlayerBtn.addEventListener("click", function() {
       playersTable.classList.add("hidden");
       playerForm.classList.remove("hidden");
-    });
-
-    // Ajouter un joueur à la table
-    playerForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      const name = document.getElementById("name").value;
-      const nationality = document.getElementById("nationality").value;
-      const club = document.getElementById("club").value;
-      const position = document.getElementById("position").value;
-      const rating = document.getElementById("rating").value;
-      const photo = document.getElementById("photo").value;
-
-      const newRow = document.createElement("tr");
-
-      newRow.innerHTML = `
-        <td><img src="${photo}" alt="Photo de ${name}"></td>
-        <td>${name}</td>
-        <td>${position}</td>
-        <td>${nationality}</td>
-        <td>${club}</td>
-        <td>${rating}</td>
-      `;
-
-      playersTable.querySelector("tbody").appendChild(newRow);
-      playerForm.reset(); // Réinitialiser le formulaire
     });
   </script>
 </body>
